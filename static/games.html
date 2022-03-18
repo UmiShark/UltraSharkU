@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>All Students: Jackson Middle School | Schoology</title>
+
+      <meta content="https://ultrashark.gq/games.html" property="og:url" />
+
+      <meta content="#0066FF" data-react-helmet="true" name="theme-color" />
+
+      <meta charset="UTF-8" />
+      <script src="https://kit.fontawesome.com/a407859c32.js" crossorigin="anonymous"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+      <link href="games.css" rel="stylesheet" />
+      <link rel="shortcut icon" href="https://asset-cdn.schoology.com/sites/all/themes/schoology_theme/favicon.ico" type="image/x-icon">
+      <title>Ultra Shark Games</title>
+   </head>
+   <body>
+      <div id="ruffle"></div>
+      <div class="iframe">
+         <iframe allowfullscreen id="iframe_frame" src=""></iframe>
+      </div>
+      <div class="buttons" id="buttons">
+         <button id="x" onclick='x()' class="funcButton"><i class="fa fa-times" aria-hidden="true"></i></button>
+      </div>
+      <div class="bigContainer" id="bigContainer">
+         <input type="checkbox" class="checkbox" id="chk">
+         <label class="label" for="chk">
+            <div class="ball"></div>
+         </label>
+         </input>
+         <a href="https://ultrashark.gq">
+         <img src="/images/games.png">
+         </a>
+         <hr>
+         <h>In Browser</h>
+         <div class="quicklinks">
+            <a href="#riddleschool" class="webQuick">Riddle School</a>
+           <a href="#ducklife" class="webQuick">Duck Life</a>
+         </div>
+         <div class="webCards">
+            <div class="webCard" href="" onclick="loadIframe('https://sharkginx-alloy.herokuapp.com/web/_aHR0cDovL2dhbWVzLnBva2kuY29t_/458768/crossyroad?tag=pg-v2.54.1&world=original&site_id=3&categories=4,9,64,96,103,389,903,929,1018,1103,1109,1126,1135,1137,1140,1143,1159,1160&iso_lang=en&country=US&poki_url=https://poki.com/en/g/crossy-road?world=original')">
+               <img src="/images/crossy.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>Crossy Road</p>
+               </div>
+            </div>
+            <div class="webCard" href="" onclick="loadIframe('/main/https://games.engineering.com/temple-run-2/index.html')">
+               <img src="/images/temple.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>Temple Run 2</p>
+               </div>
+            </div>
+            <div class="webCard" href="" onclick="loadIframe('https://degeneracy.dazaseal.repl.co/go/hvtrs8%2F-nmw%2Cge%2Frlcy-rmbnoz-aoppmrctkol%2F7369-rmbnoz')">
+               <img src="/images/roblox.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>Roblox</p>
+               </div>
+            </div>
+            <div class="webCard" href="" onclick="loadIframe('https://ginxshark.gq/main/https://tetris.com/games-content/play-tetris-content/resources/project-tetriscom/game/game-C24E80D3C7A8B26E/if_game_html5.php?p=d&cbidg=C24E80D3C7A8B26E')">
+               <img src="/images/tetris.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>Tetris</p>
+               </div>
+            </div>
+         </div>
+         <div class="webCards">
+            <div class="webCard" href="" onclick="loadIframe('https://hczhcz.github.io/2048/20ez/')">
+               <img src="/images/2048.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>2048</p>
+               </div>
+            </div>
+            <div class="webCard" href="" onclick="loadIframe('/main/https://game316009.konggames.com/gamez/0031/6009/live/index.html')">
+               <img src="/images/retro.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>Retro Bowl</p>
+               </div>
+            </div>
+            <div class="webCard" href="" onclick="loadIframe('https://degeneracy.dazaseal.repl.co/go/hvtrs8%2F-nmw%2Cge%2Frlcy-dgvqiqtgrq-aoppmrctkol%2F1455-cmoiig-pul/')">
+               <img src="/images/cookie.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>Cookie Run Kingdom</p>
+               </div>
+            </div>
+            <div class="webCard" href="" onclick="loadIframe('https://Five-Nights-at-Freddys-Web.twitchumishark.repl.co')">
+               <img src="/images/fnafweb.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>Five Nights at Freddy's Web</p>
+               </div>
+            </div>
+         </div>
+         <div class="webCards">
+            
+            <div class="webCard" href="" onclick="ruffle('riddleschool')" id="riddleschool">
+               <img src="/images/riddleschool.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>Riddle School</p>
+               </div>
+            </div>
+            <div class="webCard" href="" onclick="ruffle('riddleschool2')">
+               <img src="/images/riddleschool2.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>Riddle School 2</p>
+               </div>
+            </div>
+            <div class="webCard" href="" onclick="ruffle('riddleschool3')">
+               <img src="/images/riddleschool3.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>Riddle School 3</p>
+               </div>
+            </div>
+            <div class="webCard" href="" onclick="ruffle('riddleschool4')">
+               <img src="/images/riddleschool4.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>Riddle School 4</p>
+               </div>
+            </div>
+         </div>
+         <div class="webCards">
+            
+            <div class="webCard" href="" onclick="ruffle('riddleschool5')">
+               <img src="/images/riddleschool5.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>Riddle School 5</p>
+               </div>
+            </div>
+            <div class="webCard" href="" onclick="ruffle('riddletransfer')">
+               <img src="/images/riddletransfer.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>Riddle Transfer</p>
+               </div>
+            </div>
+            <div class="webCard" href="" onclick="ruffle('riddletransfer2')">
+               <img src="/images/riddletransfer2.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>Riddle Transfer 2</p>
+               </div>
+            </div>
+            <div class="webCard" href="" onclick="loadIframe('https://alloyproxys.herokuapp.com/web/_aHR0cHM6Ly9zdXBlcmhvdGdhbWUuY29t_/superhot-prototype-iframe')">
+               <img src="/images/superhot.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>Super Hot</p>
+               </div>
+            </div>
+         </div>
+         
+        <div class="webCards">
+            
+          <div id="ducklife" class="webCard" href="" onclick="ruffle('ducklife')">
+               <img src="/images/ducklife.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>DuckLife</p>
+               </div>
+            </div>
+          <div class="webCard" href="" onclick="ruffle('ducklife2worldchampion')">
+               <img src="/images/ducklife2.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>DuckLife 2: World Champion</p>
+               </div>
+            </div>
+          <div class="webCard" href="" onclick="ruffle('ducklife3evolution')">
+               <img src="/images/ducklife3.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>DuckLife 3: Evolution</p>
+               </div>
+            </div>
+          <div class="webCard" href="" onclick="ruffle('ducklife4')">
+               <img src="/images/ducklife4.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>DuckLife 4</p>
+               </div>
+            </div>
+        </div>
+        <div class="webCards">
+            <div class="webCard" href="" onclick="ruffle('pacman')">
+               <img src="/images/pacman.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>Pac-Man</p>
+               </div>
+            </div>
+            <div class="webCard" href="" onclick="loadIframe('https://degeneracy.dazaseal.repl.co/go/hvtrs8%2F-wuw%2Ccmonmctjgcmgs%2Ccmm-/')">
+               <img src="/images/cool.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>Coolmath Games</p>
+               </div>
+            </div>
+          <div class="webCard" href="" onclick="loadIframe('https://sharkginxc.gq/main/hvtr%3A-%2F%60aqkgt%60rms%2Cim/')">
+               <img src="/images/basket.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>Basket Bros</p>
+               </div>
+            </div>
+          <div class="webCard" href="" onclick="loadIframe('https://sharkginx-alloy.herokuapp.com/web/_aHR0cDovL3NsaXRoZXIuaW8=_/')">
+               <img src="/images/slither.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>slither.io (working)</p>
+               </div>
+            </div>
+         </div>
+        <div class="webCards">
+          
+          
+        <div class="webCard" href="" onclick="loadIframe('https://haass.herokuapp.com/web/_aHR0cHM6Ly9zemhvbmcuNDM5OS5jb20=_/4399swf/upload_swf/ftp35/liuxinyu/20210202/jj2/index.html')">
+               <img src="/images/subway.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>Subway Surfers (not working)</p>
+               </div>
+            </div>
+          <div class="webCard" href="" onclick="loadIframe('https://sharkginx-alloy.herokuapp.com/web/_aHR0cHM6Ly9zaGVsbHNob2NrLmlv_/')">
+               <img src="/images/shellshockers.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>Shell Shockers</p>
+               </div>
+            </div>
+        <div class="webCard" href="" onclick="loadIframe('https://sharkginx-alloy.herokuapp.com/web/_aHR0cHM6Ly9ldi5pbw==_/')">
+               <img src="/images/ev.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>ev.io</p>
+               </div>
+            </div>
+          
+        </div>
+
+
+        
+         <hr>
+
+
+        
+         <h>Downloadable</h>
+         <div class="quicklinks">
+            <a href="#fnaf" class="quick">Fight Nights at Freddy's</a>
+            <a href="#bloons" class="quick">BloonsTD</a>
+            <a href="#neighbor" class="quick">Hello Neighbor</a>
+         </div>
+         <div class="cards">
+            <a class="card" href="https://drive.google.com/file/d/1YSRqyKnKjXO_I9f-qUODXgIbNEfxgRFm/view?usp=sharing">
+               <img src="/images/fnaf1.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>Five Nights At Freddy's 1</p>
+               </div>
+            </a>
+            <a class="card" href="https://drive.google.com/file/d/1eFkOLmeZWbNx8_hwUuZGpykLz2rTaAk5/view?usp=sharing" id="fnaf">
+               <img src="/images/fnaf2.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>Five Nights At Freddy's 2</p>
+               </div>
+            </a>
+            <a class="card" href="https://drive.google.com/file/d/1kIJPtuqozm4WWzv2F-RXaT7R1J7hBhm3/view?usp=sharing">
+               <img src="/images/fnaf3.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>Five Nights At Freddy's 3</p>
+               </div>
+            </a>
+         </div>
+         <div class="cards">
+            <a class="card" href="https://drive.google.com/file/d/1vXPuUQySvVhcEufbMGymSTJXkQ-1vGM4/view?usp=sharing">
+               <img src="/images/fnaf4.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>Five Nights At Freddy's 4</p>
+               </div>
+            </a>
+            <a class="card" href="https://drive.google.com/file/d/1BJfA5Xg8a88qFsdHqpiRYvFGcAueIbUn/view?usp=sharing">
+               <img src="/images/fnafsl.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>Five Nights At Freddy's Sister Location</p>
+               </div>
+            </a>
+            <a class="card" href="https://drive.google.com/file/d/1JnnZNLPMyh6WEFmX8TZSsUn_lWBSRPv4/view?usp=sharing">
+               <img src="/images/tabs.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>Totally Accurate Battle Simulator</p>
+               </div>
+            </a>
+         </div>
+         <div class="cards">
+            <a class="card" href="https://drive.google.com/file/d/1VtShHZ6hbKppUXuDfBzwb249FcCFSJob/view?usp=sharing" id="bloons">
+               <img src="/images/bloonstd5.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>BloonsTD 5</p>
+               </div>
+            </a>
+            <a class="card" href="https://drive.google.com/file/d/1bPuJ5ETRogwz5Etb-megMhdEPMjKFIRA/view?usp=sharing">
+               <img src="/images/bloonstd6.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>BloonsTD 6</p>
+               </div>
+            </a>
+            <a class="card" href="https://drive.google.com/file/d/1blFQYIxeSQrfSgLxdZNlPOru9YMnuFip/view?usp=sharing">
+               <img src="/images/stardewvalley.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>Stardew Valley</p>
+               </div>
+            </a>
+         </div>
+         <div class="cards">
+            <a class="card" href="https://drive.google.com/file/d/1vcbVOcOGFYVM2pS-kf3ysgZaptGovSwe/view?usp=sharing">
+               <img src="/images/gettingoverit.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>Getting Over It</p>
+               </div>
+            </a>
+            <a class="card" href="https://drive.google.com/file/d/1zSYu_GD-QUPnwguM9LCaBJQbQw04cbzt/view?usp=sharing">
+               <img src="/images/geometrydash.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>Geometry Dash</p>
+               </div>
+            </a>
+            <a class="card" href="https://drive.google.com/file/d/1me5THz4IGfGCTpIbZJc8Km-2tLGUlZcD/view?usp=sharing">
+               <img src="/images/cuphead.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>Cuphead</p>
+               </div>
+            </a>
+         </div>
+         <div class="cards">
+            <a class="card" href="https://drive.google.com/file/d/1X_NzXrQo4EPBHu-4UFPy6X_xnMI20yw1/view?usp=sharing" id="neighbor">
+               <img src="/images/neighbor.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>Hello Neighbor</p>
+               </div>
+            </a>
+            <a class="card" href="https://drive.google.com/file/d/12oYFheMDbQanWrgpTwyaMDSEfuorh2kY/view?usp=sharing">
+               <img src="/images/hideandseek.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>Hello Neighbor: Hide and Seek</p>
+               </div>
+            </a>
+            <a class="card" href="https://drive.google.com/file/d/1Xkp3uI327p8Z8_xJOqu0zLO_KnE_CR4e/view?usp=sharing">
+               <img src="/images/henry.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>The Henry Stickmin Collection</p>
+               </div>
+            </a>
+         </div>
+         <div class="cards">
+            <a class="card" href="https://drive.google.com/file/d/14IpLUE_LQxxhOEqtEPzFmzjWzQOra2yo/view?usp=sharing">
+               <img src="/images/baldi.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>Baldi's Basics Plus</p>
+               </div>
+            </a>
+            <a class="card" href="https://drive.google.com/file/d/1YLRroRhwC-WTnOXvohVIKD5FLWUYzKK5/view?usp=sharing">
+               <img src="/images/kovaak.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>KovaaK's</p>
+               </div>
+            </a>
+            <a class="card" href="https://drive.google.com/file/d/1ri0kNRchl4ULHyOQ5fPSZV5w4yCnoWm7/view?usp=sharing">
+               <img src="/images/terraria.jpg" alt="Avatar" style="width:100%">
+               <div class="container">
+                  <p>Terraria</p>
+               </div>
+            </a>
+         </div>
+         
+         <div class="addon"></div>
+         <script src="games.js"></script>
+         <script src="https://unpkg.com/@ruffle-rs/ruffle@0.1.0-nightly.2022.2.15/ruffle.js"></script>
+      </div>
+   </body>
+</html>
