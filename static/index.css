@@ -47,6 +47,8 @@ body {
 	background: var(--bkg-color);
 	transition-duration: 0.2s;
   transition-timing-function: ease-out;
+	height: 100%;
+  	overflow: hidden;
 	z-index: 10;
 }
 
