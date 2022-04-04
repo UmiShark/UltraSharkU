@@ -47,6 +47,7 @@ body {
 	background: var(--bkg-color);
 	transition-duration: 0.2s;
   transition-timing-function: ease-out;
+	z-index: 10;
 }
 
 #iframe_frame {
@@ -235,4 +236,11 @@ button:focus {
 
 .fa-sun {
 	color: var(--ld-color);
+}
+
+.aBalls {
+  z-index: 1;
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0.7;
 }
