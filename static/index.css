@@ -49,7 +49,6 @@ body {
   transition-timing-function: ease-out;
 	height: 100%;
   	overflow: hidden;
-	z-index: 10;
 }
 
 #iframe_frame {
@@ -77,6 +76,7 @@ label {
 	margin-bottom: 20px;
 	user-select: none;
 	pointer-events: none;
+	z-index: 10;
 }
 
 .input {
