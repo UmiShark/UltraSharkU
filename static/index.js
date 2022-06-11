@@ -1,3 +1,7 @@
+iframe = true
+
+//-----------------------------------Ultraviolet-----------------------------------\\
+
 const form = document.querySelector('form');
 const input = document.getElementById('target');
 
@@ -19,6 +23,53 @@ function isUrl(val = ''){
     if (/^http(s?):\/\//.test(val) || val.includes('.') && val.substr(0, 1) !== ' ') return true;
     return false;
 };
+
+//-----------------------------------GAMES-----------------------------------\\
+
+function x() {
+	buttons.style.display = "none";
+	bigContainer.style.display = "initial";
+	if (iframe) {
+    console.log('true')
+		iframe_frame.style.display = "none";
+		document.getElementById("iframe_frame").src = "";
+	} else {
+    console.log('false')
+		document.getElementById("ruffle").removeChild(document.getElementById("ruffle").firstChild);
+	}
+}
+
+function reload() {
+	document.getElementById('iframe_frame').contentWindow.location.reload();
+}
+
+
+function loadIframe(url){
+  iframe=true
+  bigContainer.style.display = "none";
+	iframe_frame.style.display = "initial";
+	buttons.style.display = "flex";
+	document.getElementById("iframe_frame").src = url;
+}
+
+function ruffle(url){
+  iframe = false;
+	bigContainer.style.display = "none";
+	buttons.style.display = "flex";
+	document.getElementById("ruffle").style.display = "initial";
+	const ruffle = window.RufflePlayer.newest()
+	const player = ruffle.createPlayer();
+  player.config = {
+    letterbox: "on",
+    backgroundColor: "#000000",
+};
+  player.style.width = "100%";
+  player.style.height = "100%";
+	document.getElementById("ruffle").append(player);
+	player.load(`/swf/${url}.swf`);
+}
+
+//-----------------------------------BALLS-----------------------------------\\
 
 const btn = document.querySelector(".checkbox");
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
