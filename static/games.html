@@ -1,239 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>  	
-      <title>All Students: Jackson Middle School | Schoology</title>
-      <meta content="https://ultrashark.gq/games.html" property="og:url" />
-      <meta charset="UTF-8" />
-      <script src="https://kit.fontawesome.com/a407859c32.js" crossorigin="anonymous"></script>
-      <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
-      <link href="games.css" rel="stylesheet" />
-      <link rel="shortcut icon" href="https://asset-cdn.schoology.com/sites/all/themes/schoology_theme/favicon.ico" type="image/x-icon">
-      <title>Ultra Shark Games</title>
-   </head>
-   <body>
-      <div id="ruffle"></div>
-      <div class="iframe">
-         <iframe allowfullscreen id="iframe_frame" src=""></iframe>
+  <head>
+    <title>All Students: Jackson Middle School | Schoology</title>
+    <meta content="https://ultrashark.gq/games.html" property="og:url" />
+    <meta charset="UTF-8" />
+    <script src="https://kit.fontawesome.com/a407859c32.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+    <link href="games.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="https://asset-cdn.schoology.com/sites/all/themes/schoology_theme/favicon.ico" type="image/x-icon">
+    <title>Ultra Shark Games</title>
+  </head>
+  <body>
+    <div id="ruffle"></div>
+    <div class="iframe">
+      <iframe allowfullscreen id="iframe_frame" src=""></iframe>
+    </div>
+    <div class="buttons" id="buttons">
+      <button id="x" onclick='x()' class="funcButton">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div class="bigContainer" id="bigContainer">
+      <input type="checkbox" class="checkbox" id="chk">
+      <label class="label" for="chk">
+        <div class="ball"></div>
+      </label>
+      </input>
+      <a href="./">
+        <img src="/images/games.png">
+      </a>
+      <hr>
+      <h>In Browser</h>
+      <div class="quicklinks">
+        <a href="#riddleschool" class="webQuick">Riddle School</a>
+        <a href="#ducklife" class="webQuick">Duck Life</a>
       </div>
-      <div class="buttons" id="buttons">
-         <button id="x" onclick='x()' class="funcButton"><i class="fa fa-times" aria-hidden="true"></i></button>
-      </div>
-      <div class="bigContainer" id="bigContainer">
-         <input type="checkbox" class="checkbox" id="chk">
-         <label class="label" for="chk">
-            <div class="ball"></div>
-         </label>
-         </input>
-         <a href="./">
-         <img src="/images/games.png">
-         </a>
-         <hr>
-         <h>In Browser</h>
-         <div class="quicklinks">
-            <a href="#riddleschool" class="webQuick">Riddle School</a>
-           <a href="#ducklife" class="webQuick">Duck Life</a>
-         </div>
-         <div class="webCards">
-            <div class="webCard" href="" onclick="loadIframe('https://sharkginx-alloy.herokuapp.com/web/_aHR0cDovL2dhbWVzLnBva2kuY29t_/458768/crossyroad?tag=pg-v2.54.1&world=original&site_id=3&categories=4,9,64,96,103,389,903,929,1018,1103,1109,1126,1135,1137,1140,1143,1159,1160&iso_lang=en&country=US&poki_url=https://poki.com/en/g/crossy-road?world=original')">
-               <img src="/images/crossy.jpg" alt="Avatar" style="width:100%">
-               <div class="container">
-                  <p>Crossy Road</p>
-               </div>
-            </div>
-            <div class="webCard" href="" onclick="loadIframe('https://sharkginx.ga/main/https://games.engineering.com/temple-run-2/index.html')">
-               <img src="/images/temple.jpg" alt="Avatar" style="width:100%">
-               <div class="container">
-                  <p>Temple Run 2</p>
-               </div>
-            </div>
-            <div class="webCard" href="" onclick="loadIframe('/service/hvtrs8%2F-nmw%2Cge%2Frlcy-rmbnoz-aoppmrctkol%2F7369-rmbnoz')">
-               <img src="/images/roblox.jpg" alt="Avatar" style="width:100%">
-               <div class="container">
-                  <p>Roblox</p>
-               </div>
-            </div>
-            <div class="webCard" href="" onclick="loadIframe('/service/hvtrs8%2F-tgtpiq.aoo%2Feaoeq-aoltgnv%2Frlcy%2Ftgtpiq-aoltgnv%2Fpeqowraeq%2Frrmjgcv-vevrksaoo%2Feaoe-gcmg-09C07D2335A8DF1C-id_eaoe%5Dhvmn5%2Cpjp%3Dp%3Fd%24c%60ifg%3F2%3BA25F0117C%3AFD3A')">
-               <img src="/images/tetris.jpg" alt="Avatar" style="width:100%">
-               <div class="container">
-                  <p>Tetris</p>
-               </div>
-            </div>
-         </div>
-         <div class="webCards">
-            <div class="webCard" href="" onclick="loadIframe('https://hczhcz.github.io/2048/20ez/')">
-               <img src="/images/2048.jpg" alt="Avatar" style="width:100%">
-               <div class="container">
-                  <p>2048</p>
-               </div>
-            </div>
-            <div class="webCard" href="" onclick="loadIframe('/service/hvtrs8%2F-gcmg33620%3B.iolgeaoeq.aoo%2Feaoex%2F2011-620%3B%2Fnite-ildgx%2Chvmn')">
-               <img src="/images/retro.jpg" alt="Avatar" style="width:100%">
-               <div class="container">
-                  <p>Retro Bowl</p>
-               </div>
-            </div>
-            <div class="webCard" href="" onclick="loadIframe('/service/hvtrs8%2F-nmw%2Cge%2Frlcy-dgvqiqtgrq-aoppmrctkol%2F1455-cmoiig-pul')">
-               <img src="/images/cookie.jpg" alt="Avatar" style="width:100%">
-               <div class="container">
-                  <p>Cookie Run Kingdom</p>
-               </div>
-            </div>
-            <div class="webCard" href="" onclick="loadIframe('https://Five-Nights-at-Freddys-Web.twitchumishark.repl.co')">
-               <img src="/images/fnafweb.jpg" alt="Avatar" style="width:100%">
-               <div class="container">
-                  <p>Five Nights at Freddy's Web</p>
-               </div>
-            </div>
-         </div>
-         <div class="webCards">
-            
-            <div class="webCard" href="" onclick="ruffle('riddleschool')" id="riddleschool">
-               <img src="/images/riddleschool.jpg" alt="Avatar" style="width:100%">
-               <div class="container">
-                  <p>Riddle School</p>
-               </div>
-            </div>
-            <div class="webCard" href="" onclick="ruffle('riddleschool2')">
-               <img src="/images/riddleschool2.jpg" alt="Avatar" style="width:100%">
-               <div class="container">
-                  <p>Riddle School 2</p>
-               </div>
-            </div>
-            <div class="webCard" href="" onclick="ruffle('riddleschool3')">
-               <img src="/images/riddleschool3.jpg" alt="Avatar" style="width:100%">
-               <div class="container">
-                  <p>Riddle School 3</p>
-               </div>
-            </div>
-            <div class="webCard" href="" onclick="ruffle('riddleschool4')">
-               <img src="/images/riddleschool4.jpg" alt="Avatar" style="width:100%">
-               <div class="container">
-                  <p>Riddle School 4</p>
-               </div>
-            </div>
-         </div>
-         <div class="webCards">
-            
-            <div class="webCard" href="" onclick="ruffle('riddleschool5')">
-               <img src="/images/riddleschool5.jpg" alt="Avatar" style="width:100%">
-               <div class="container">
-                  <p>Riddle School 5</p>
-               </div>
-            </div>
-            <div class="webCard" href="" onclick="ruffle('riddletransfer')">
-               <img src="/images/riddletransfer.jpg" alt="Avatar" style="width:100%">
-               <div class="container">
-                  <p>Riddle Transfer</p>
-               </div>
-            </div>
-            <div class="webCard" href="" onclick="ruffle('riddletransfer2')">
-               <img src="/images/riddletransfer2.jpg" alt="Avatar" style="width:100%">
-               <div class="container">
-                  <p>Riddle Transfer 2</p>
-               </div>
-            </div>
-            <div class="webCard" href="" onclick="loadIframe('https://sharkginx-alloy.herokuapp.com/web/_aHR0cHM6Ly9zdXBlcmhvdGdhbWUuY29t_/superhot-prototype-iframe')">
-               <img src="/images/superhot.jpg" alt="Avatar" style="width:100%">
-               <div class="container">
-                  <p>Super Hot</p>
-               </div>
-            </div>
-         </div>
-         
-        <div class="webCards">
-            
-          <div id="ducklife" class="webCard" href="" onclick="ruffle('ducklife')">
-               <img src="/images/ducklife.jpg" alt="Avatar" style="width:100%">
-               <div class="container">
-                  <p>DuckLife</p>
-               </div>
-            </div>
-          <div class="webCard" href="" onclick="ruffle('ducklife2worldchampion')">
-               <img src="/images/ducklife2.jpg" alt="Avatar" style="width:100%">
-               <div class="container">
-                  <p>DuckLife 2: World Champion</p>
-               </div>
-            </div>
-          <div class="webCard" href="" onclick="ruffle('ducklife3evolution')">
-               <img src="/images/ducklife3.jpg" alt="Avatar" style="width:100%">
-               <div class="container">
-                  <p>DuckLife 3: Evolution</p>
-               </div>
-            </div>
-          <div class="webCard" href="" onclick="ruffle('ducklife4')">
-               <img src="/images/ducklife4.jpg" alt="Avatar" style="width:100%">
-               <div class="container">
-                  <p>DuckLife 4</p>
-               </div>
-            </div>
+      <div class="webCards">
+        <div class="webCard" href="" onclick="loadIframe('https://sharkginx-alloy.herokuapp.com/web/_aHR0cDovL2dhbWVzLnBva2kuY29t_/458768/crossyroad?tag=pg-v2.54.1&world=original&site_id=3&categories=4,9,64,96,103,389,903,929,1018,1103,1109,1126,1135,1137,1140,1143,1159,1160&iso_lang=en&country=US&poki_url=https://poki.com/en/g/crossy-road?world=original')">
+          <img src="/images/crossy.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <p>Crossy Road</p>
+          </div>
         </div>
-        <div class="webCards">
-            <div class="webCard" href="" onclick="ruffle('pacman')">
-               <img src="/images/pacman.jpg" alt="Avatar" style="width:100%">
-               <div class="container">
-                  <p>Pac-Man</p>
-               </div>
-            </div>
-            <div class="webCard" href="" onclick="loadIframe('https://degeneracy.dazaseal.repl.co/go/hvtrs8%2F-wuw%2Ccmonmctjgcmgs%2Ccmm-/')">
-               <img src="/images/cool.jpg" alt="Avatar" style="width:100%">
-               <div class="container">
-                  <p>Coolmath Games</p>
-               </div>
-            </div>
-          <div class="webCard" href="" onclick="loadIframe('https://sharkginxc.gq/main/hvtr%3A-%2F%60aqkgt%60rms%2Cim/')">
-               <img src="/images/basket.jpg" alt="Avatar" style="width:100%">
-               <div class="container">
-                  <p>Basket Bros</p>
-               </div>
-            </div>
-          <div class="webCard" href="" onclick="loadIframe('https://sharkginx-alloy.herokuapp.com/web/_aHR0cDovL3NsaXRoZXIuaW8=_/')">
-               <img src="/images/slither.jpg" alt="Avatar" style="width:100%">
-               <div class="container">
-                  <p>slither.io (working)</p>
-               </div>
-            </div>
-         </div>
-        <div class="webCards">
-          
-          
+        <div class="webCard" href="" onclick="loadIframe('https://sharkginx.ga/main/https://games.engineering.com/temple-run-2/index.html')">
+          <img src="/images/temple.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <p>Temple Run 2</p>
+          </div>
+        </div>
+        <div class="webCard" href="" onclick="loadIframe('/service/hvtrs8%2F-nmw%2Cge%2Frlcy-rmbnoz-aoppmrctkol%2F7369-rmbnoz')">
+          <img src="/images/roblox.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <p>Roblox</p>
+          </div>
+        </div>
+        <div class="webCard" href="" onclick="loadIframe('/service/hvtrs8%2F-tgtpiq.aoo%2Feaoeq-aoltgnv%2Frlcy%2Ftgtpiq-aoltgnv%2Fpeqowraeq%2Frrmjgcv-vevrksaoo%2Feaoe-gcmg-09C07D2335A8DF1C-id_eaoe%5Dhvmn5%2Cpjp%3Dp%3Fd%24c%60ifg%3F2%3BA25F0117C%3AFD3A')">
+          <img src="/images/tetris.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <p>Tetris</p>
+          </div>
+        </div>
+      </div>
+      <div class="webCards">
+        <div class="webCard" href="" onclick="loadIframe('https://hczhcz.github.io/2048/20ez/')">
+          <img src="/images/2048.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <p>2048</p>
+          </div>
+        </div>
+        <div class="webCard" href="" onclick="loadIframe('/service/hvtrs8%2F-gcmg33620%3B.iolgeaoeq.aoo%2Feaoex%2F2011-620%3B%2Fnite-ildgx%2Chvmn')">
+          <img src="/images/retro.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <p>Retro Bowl</p>
+          </div>
+        </div>
+        <div class="webCard" href="" onclick="loadIframe('/service/hvtrs8%2F-nmw%2Cge%2Frlcy-dgvqiqtgrq-aoppmrctkol%2F1455-cmoiig-pul')">
+          <img src="/images/cookie.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <p>Cookie Run Kingdom</p>
+          </div>
+        </div>
+        <div class="webCard" href="" onclick="loadIframe('https://Five-Nights-at-Freddys-Web.twitchumishark.repl.co')">
+          <img src="/images/fnafweb.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <p>Five Nights at Freddy's Web</p>
+          </div>
+        </div>
+      </div>
+      <div class="webCards">
+        <div class="webCard" href="" onclick="ruffle('riddleschool')" id="riddleschool">
+          <img src="/images/riddleschool.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <p>Riddle School</p>
+          </div>
+        </div>
+        <div class="webCard" href="" onclick="ruffle('riddleschool2')">
+          <img src="/images/riddleschool2.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <p>Riddle School 2</p>
+          </div>
+        </div>
+        <div class="webCard" href="" onclick="ruffle('riddleschool3')">
+          <img src="/images/riddleschool3.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <p>Riddle School 3</p>
+          </div>
+        </div>
+        <div class="webCard" href="" onclick="ruffle('riddleschool4')">
+          <img src="/images/riddleschool4.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <p>Riddle School 4</p>
+          </div>
+        </div>
+      </div>
+      <div class="webCards">
+        <div class="webCard" href="" onclick="ruffle('riddleschool5')">
+          <img src="/images/riddleschool5.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <p>Riddle School 5</p>
+          </div>
+        </div>
+        <div class="webCard" href="" onclick="ruffle('riddletransfer')">
+          <img src="/images/riddletransfer.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <p>Riddle Transfer</p>
+          </div>
+        </div>
+        <div class="webCard" href="" onclick="ruffle('riddletransfer2')">
+          <img src="/images/riddletransfer2.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <p>Riddle Transfer 2</p>
+          </div>
+        </div>
+        <div class="webCard" href="" onclick="loadIframe('https://sharkginx-alloy.herokuapp.com/web/_aHR0cHM6Ly9zdXBlcmhvdGdhbWUuY29t_/superhot-prototype-iframe')">
+          <img src="/images/superhot.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <p>Super Hot</p>
+          </div>
+        </div>
+      </div>
+      <div class="webCards">
+        <div id="ducklife" class="webCard" href="" onclick="ruffle('ducklife')">
+          <img src="/images/ducklife.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <p>DuckLife</p>
+          </div>
+        </div>
+        <div class="webCard" href="" onclick="ruffle('ducklife2worldchampion')">
+          <img src="/images/ducklife2.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <p>DuckLife 2: World Champion</p>
+          </div>
+        </div>
+        <div class="webCard" href="" onclick="ruffle('ducklife3evolution')">
+          <img src="/images/ducklife3.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <p>DuckLife 3: Evolution</p>
+          </div>
+        </div>
+        <div class="webCard" href="" onclick="ruffle('ducklife4')">
+          <img src="/images/ducklife4.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <p>DuckLife 4</p>
+          </div>
+        </div>
+      </div>
+      <div class="webCards">
+        <div class="webCard" href="" onclick="ruffle('pacman')">
+          <img src="/images/pacman.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <p>Pac-Man</p>
+          </div>
+        </div>
+        <div class="webCard" href="" onclick="loadIframe('https://degeneracy.dazaseal.repl.co/go/hvtrs8%2F-wuw%2Ccmonmctjgcmgs%2Ccmm-/')">
+          <img src="/images/cool.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <p>Coolmath Games</p>
+          </div>
+        </div>
+        <div class="webCard" href="" onclick="loadIframe('https://sharkginxc.gq/main/hvtr%3A-%2F%60aqkgt%60rms%2Cim/')">
+          <img src="/images/basket.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <p>Basket Bros</p>
+          </div>
+        </div>
+        <div class="webCard" href="" onclick="loadIframe('https://sharkginx-alloy.herokuapp.com/web/_aHR0cDovL3NsaXRoZXIuaW8=_/')">
+          <img src="/images/slither.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <p>slither.io (working)</p>
+          </div>
+        </div>
+      </div>
+      <div class="webCards">
         <div class="webCard" href="" onclick="loadIframe('https://sharkginx-alloy.herokuapp.com/web/_aHR0cHM6Ly9zemhvbmcuNDM5OS5jb20=_/4399swf/upload_swf/ftp35/liuxinyu/20210202/jj2/index.html')">
-               <img src="/images/subway.jpg" alt="Avatar" style="width:100%">
-               <div class="container">
-                  <p>Subway Surfers (not working)</p>
-               </div>
-            </div>
-          <div class="webCard" href="" onclick="loadIframe('service/hvtrs8%2F-sjenlqhmci.ko-')">
-               <img src="/images/shellshockers.jpg" alt="Avatar" style="width:100%">
-               <div class="container">
-                  <p>Shell Shockers</p>
-               </div>
-            </div>
-        <div class="webCard" href="" onclick="loadIframe('https://sharkginx-alloy.herokuapp.com/web/_aHR0cHM6Ly9ldi5pbw==_/')">
-               <img src="/images/ev.jpg" alt="Avatar" style="width:100%">
-               <div class="container">
-                  <p>ev.io</p>
-               </div>
-            </div>
-          <div class="webCard" href="" onclick="loadIframe('/service/hvtrs8%2F-wuw%2Cgcmgnmrc.aoo%2Fwpnocd-gcmgs-hvmn5-twr%60o%2Fmmtm-paaep-t1-')">
-               <img src="" alt="Avatar" style="width:100%">
-               <div class="container">
-                  <p>Turbo Moto Racer</p>
-               </div>
-            </div>
-           
-          
+          <img src="/images/subway.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <p>Subway Surfers (not working)</p>
+          </div>
         </div>
-
-        
-         <hr>
-
-         
-         <div class="addon"></div>
-         <script src="index.js"></script>
-       	<script src="uv/uv.config.js"></script>
-	<script src="uv/uv.bundle.js"></script>
-         <script src="https://unpkg.com/@ruffle-rs/ruffle@0.1.0-nightly.2022.2.15/ruffle.js"></script>
+        <div class="webCard" href="" onclick="loadIframe('service/hvtrs8%2F-sjenlqhmci.ko-')">
+          <img src="/images/shellshockers.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <p>Shell Shockers</p>
+          </div>
+        </div>
+        <div class="webCard" href="" onclick="loadIframe('https://sharkginx-alloy.herokuapp.com/web/_aHR0cHM6Ly9ldi5pbw==_/')">
+          <img src="/images/ev.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <p>ev.io</p>
+          </div>
+        </div>
+        <div class="webCard" href="" onclick="loadIframe('/service/hvtrs8%2F-wuw%2Cgcmgnmrc.aoo%2Fwpnocd-gcmgs-hvmn5-twr%60o%2Fmmtm-paaep-t1-')">
+          <img src="" alt="Avatar" style="width:100%">
+          <div class="container">
+            <p>Turbo Moto Racer</p>
+          </div>
+        </div>
       </div>
-   </body>
+      <hr>
+      <div class="addon"></div>
+      <script src="index.js"></script>
+      <script src="uv/uv.config.js"></script>
+      <script src="uv/uv.bundle.js"></script>
+      <script src="https://unpkg.com/@ruffle-rs/ruffle@0.1.0-nightly.2022.2.15/ruffle.js"></script>
+    </div>
+  </body>
 </html>
