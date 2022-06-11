@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
+      <script>
+        function load(){
+          window.navigator.serviceWorker.register('../sw.js', {
+          scope: __uv$config.prefix
+          })
+          console.log('loaded');
+        };
+        window.onload = load;
+        
+      </script>   	
       <title>All Students: Jackson Middle School | Schoology</title>
       <meta content="https://ultrashark.gq/games.html" property="og:url" />
       <meta content="#0066FF" data-react-helmet="true" name="theme-color" />
@@ -204,7 +214,7 @@
                   <p>Subway Surfers (not working)</p>
                </div>
             </div>
-          <div class="webCard" href="" onclick="loadIframe('https://sharkginx-alloy.herokuapp.com/web/_aHR0cHM6Ly9zaGVsbHNob2NrLmlv_/')">
+          <div class="webCard" href="" onclick="loadIframe('service/hvtrs8%2F-sjenlqhmci.ko-')">
                <img src="/images/shellshockers.jpg" alt="Avatar" style="width:100%">
                <div class="container">
                   <p>Shell Shockers</p>
@@ -232,6 +242,8 @@
          
          <div class="addon"></div>
          <script src="games.js"></script>
+       	<script src="uv/uv.config.js"></script>
+	<script src="uv/uv.bundle.js"></script>
          <script src="https://unpkg.com/@ruffle-rs/ruffle@0.1.0-nightly.2022.2.15/ruffle.js"></script>
       </div>
    </body>

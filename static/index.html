@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
+      <script>
+        function load(){
+          window.navigator.serviceWorker.register('./sw.js', {
+          scope: __uv$config.prefix
+          })
+          console.log('loaded');
+        };
+        window.onload = load;
+        
+      </script>
         <script src="https://kit.fontawesome.com/a407859c32.js" crossorigin="anonymous"></script>
       <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
         <link href="index.css" rel="stylesheet">
@@ -17,12 +27,12 @@
         <div class="sharkginx">
             <img src="ultrashark.png" height="64px" alt=""/>
         </div>
-        <form>
+        <form id="targetform">
             <input id="target" autocomplete=off class="input" placeholder="Search or type a URL">
         </form>
         <div class="icon-pos">
          <button 
-           onclick="window.location.href = __uv$config.prefix + __uv$config.encodeUrl('https://discord.com/login');"
+         onclick="window.location.href = __uv$config.prefix + __uv$config.encodeUrl('https://discord.com/login');"
             target="_blank"
             class="discord">
          <i class="fab fa-discord"></i>
