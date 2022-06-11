@@ -1,60 +1,49 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <script>
-        function load(){
-          window.navigator.serviceWorker.register('./sw.js', {
+  <head>
+    <script>
+      function load() {
+        window.navigator.serviceWorker.register('./sw.js', {
           scope: __uv$config.prefix
-          })
-          console.log('loaded');
-        };
-        window.onload = load;
-        
-      </script>
-        <script src="https://kit.fontawesome.com/a407859c32.js" crossorigin="anonymous"></script>
-      <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
-        <link href="index.css" rel="stylesheet">
-      <title>Home | Schoology</title>
-      <link rel="shortcut icon" href="https://asset-cdn.schoology.com/sites/all/themes/schoology_theme/favicon.ico" type="image/x-icon">
-    </head>
-    <body>
-        <input type="checkbox" class="checkbox" id="chk">
-         <label class="label" for="chk">
-            <div class="ball"></div>
-         </label>
-        </input>
-
-        <div class="sharkginx">
-            <img src="ultrashark.png" height="64px" alt=""/>
-        </div>
-        <form id="targetform">
-            <input id="target" autocomplete=off class="input" placeholder="Search or type a URL">
-        </form>
-        <div class="icon-pos">
-         <button 
-         onclick="window.location.href = __uv$config.prefix + __uv$config.encodeUrl('https://discord.com/login');"
-            target="_blank"
-            class="discord">
-         <i class="fab fa-discord"></i>
-         </button>
-         <button 
-           onclick="window.location.href = __uv$config.prefix + __uv$config.encodeUrl('https://youtube.com');"
-            class="discord">
-         <i class="fa-brands fa-youtube"></i>
-         </button>
-          <button 
-            onclick="window.location.href = __uv$config.prefix + __uv$config.encodeUrl('https://twitch.tv');"
-            class="discord">
-         <i class="fab fa-twitch"></i>
-         </button>
-         <a 
-           href="/games.html"
-          class="discord">
-         <i class="fas fa-gamepad"></i>
-         </a>
-      </div>
-        <script src="uv/uv.bundle.js"></script>
-        <script src="uv/uv.config.js"></script>
-        <script src="index.js"></script>
-    </body>
+        })
+        console.log('loaded');
+      };
+      window.onload = load;
+    </script>
+    <script src="https://kit.fontawesome.com/a407859c32.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <title>Home | Schoology</title>
+    <link rel="shortcut icon" href="https://asset-cdn.schoology.com/sites/all/themes/schoology_theme/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <input type="checkbox" class="checkbox" id="chk">
+    <label class="label" for="chk">
+      <div class="ball"></div>
+    </label>
+    </input>
+    <div class="sharkginx">
+      <img src="ultrashark.png" height="64px" alt="" />
+    </div>
+    <form id="targetform">
+      <input id="target" autocomplete=off class="input" placeholder="Search or type a URL">
+    </form>
+    <div class="icon-pos">
+      <button onclick="window.location.href = __uv$config.prefix + __uv$config.encodeUrl('https://discord.com/login');" target="_blank" class="discord">
+        <i class="fab fa-discord"></i>
+      </button>
+      <button onclick="window.location.href = __uv$config.prefix + __uv$config.encodeUrl('https://youtube.com');" class="discord">
+        <i class="fa-brands fa-youtube"></i>
+      </button>
+      <button onclick="window.location.href = __uv$config.prefix + __uv$config.encodeUrl('https://twitch.tv');" class="discord">
+        <i class="fab fa-twitch"></i>
+      </button>
+      <a href="/games.html" class="discord">
+        <i class="fas fa-gamepad"></i>
+      </a>
+    </div>
+    <script src="uv/uv.bundle.js"></script>
+    <script src="uv/uv.config.js"></script>
+    <script src="index.js"></script>
+  </body>
 </html>
