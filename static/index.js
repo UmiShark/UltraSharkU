@@ -97,6 +97,7 @@ btn.addEventListener("click", function() {
 	localStorage.setItem("theme", theme);
 });
 
+/*
 const colors = ["#47C1FF", "#A8E2F7", "#007AD9", "#2AA4F4", "#0C52BB"];
 
 const numBalls = 50;
@@ -139,3 +140,4 @@ balls.forEach((el, i, ra) => {
 		}
 	);
 });
+*/
