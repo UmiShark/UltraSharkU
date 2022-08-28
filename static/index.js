@@ -69,8 +69,7 @@ function ruffle(url) {
 	player.load(`/swf/${url}.swf`);
 }
 
-//-----------------------------------BALLS-----------------------------------\\
-/*
+
 const btn = document.querySelector(".checkbox");
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
@@ -98,6 +97,8 @@ btn.addEventListener("click", function() {
 });
 
 
+//-----------------------------------BALLS-----------------------------------\\
+/*
 const colors = ["#47C1FF", "#A8E2F7", "#007AD9", "#2AA4F4", "#0C52BB"];
 
 const numBalls = 50;
