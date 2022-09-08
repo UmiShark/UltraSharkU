@@ -154,7 +154,7 @@ label {
 .discord {
 	margin-top: 40px;
 	color: var(--ld-color);
-	border-radius: 40%;
+	border-radius: 45%;
 	background-color: var(--bkg-color);
 	border: 1px solid var(--text-color);
 	width: 42px;
