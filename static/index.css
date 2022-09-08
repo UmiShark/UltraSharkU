@@ -154,7 +154,7 @@ label {
 .discord {
 	margin-top: 40px;
 	color: var(--ld-color);
-	border-radius: 45%;
+	border-radius: 50%;
 	background-color: var(--bkg-color);
 	border: 1px solid var(--text-color);
 	width: 42px;
@@ -245,4 +245,37 @@ button:focus {
   position: absolute;
   border-radius: 100%;
   opacity: 0.7;
+}
+
+.button {
+	transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	padding: 7px 15px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	background: var(--bkg-color);
+	color: var(--text-color);
+	border: 1px solid var(--text-color);
+  cursor: pointer;
+}
+
+.button:hover {
+	background: linear-gradient(270deg, #17b5ff, #178cff, #1759ff);
+	background-size: 400%;
+	animation: animate 2s linear infinite;
+	color: white;
+}
+
+@keyframes animate {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+#targetform {
+  position: relative;
 }
