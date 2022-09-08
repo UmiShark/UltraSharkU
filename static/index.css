@@ -80,7 +80,7 @@ label {
 }
 
 .input {
-  font-family: 'Space Mono', monospace;
+  font-family: 'Nunito', sans-serif;
   transition: box-shadow ease-out 0.2s, background ease-out 0.2s;
   padding: 7px 15px;
   line-height: 30px;
