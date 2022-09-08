@@ -19,18 +19,22 @@
     <link rel="shortcut icon" href="https://asset-cdn.schoology.com/sites/all/themes/schoology_theme/favicon.ico" type="image/x-icon">
   </head>
   <body>
+    
     <input type="checkbox" class="checkbox" id="chk">
     <label class="label" for="chk">
       <div class="ball"></div>
     </label>
-    
     </input>
+    
     <div class="sharkginx">
       <img src="logo.png" height="88px" alt="" />
     </div>
+    
     <form id="targetform">
       <input id="target" autocomplete=off class="input" placeholder="Search or type a URL">
+      <button onclick='go()' class="button"><i class="fa fa-search"></i></button>
     </form>
+    
     <div class="icon-pos">
       <button onclick="window.location.href = __uv$config.prefix + __uv$config.encodeUrl('https://discord.com/login');" target="_blank" class="discord">
         <i class="fab fa-discord"></i>
