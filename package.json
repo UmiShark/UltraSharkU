@@ -3,7 +3,7 @@
     "bare-server-node": "github:tomphttp/bare-server-node",
     "node-static": "^0.7.11"
   },
-  "name": "uv-app",
+  "name": "us-app",
   "version": "1.0.0",
   "description": "asdf",
   "main": "index.js",
